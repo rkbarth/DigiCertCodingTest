@@ -1,5 +1,7 @@
 # DigiCertCodingTest
 
+This is just a simple web app template that can be used to fake an API.  If you want to expand on it, you can fork from this commit.
+
 ## API Documentation (OpenAPI / Swagger) 🔍
 
 - OpenAPI JSON: `http://localhost:8080/v3/api-docs`
