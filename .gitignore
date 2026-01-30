@@ -31,3 +31,8 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# runtime artifacts
+run.pid
+run.log
+
