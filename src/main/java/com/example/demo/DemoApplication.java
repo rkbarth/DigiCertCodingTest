@@ -29,7 +29,7 @@ public class DemoApplication {
 		if (name.equals(name.toUpperCase())) {
 			return "<h1>STOP YELLING, " + name + "!</h1>";
 		}
-		return "<h1>Hello, " + name + "!</h1>";gi
+		return "<h1>Hello, " + name + "!</h1>";
 	}
 
 }
