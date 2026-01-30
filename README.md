@@ -2,6 +2,12 @@
 
 This is just a simple web app template that can be used to fake an API.  If you want to expand on it, you can fork from this commit.
 
+To run it in a GitHub CodeSpace, you will need to let it install all the Java and Spring Extensions it detects it needs.  Then in the terminal
+
+1) Install Java: sdk install java 21.0.6-tem
+2) Run it from the terminal: ./mvnw spring-boot:run
+3) Let it open the website in your browser and go to <url>/swagger-ui/index.html#/Library
+
 ## API Documentation (OpenAPI / Swagger) 🔍
 
 - OpenAPI JSON: `http://localhost:8080/v3/api-docs`
