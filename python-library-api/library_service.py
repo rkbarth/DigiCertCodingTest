@@ -1,7 +1,9 @@
+from datetime import datetime
 from typing import Dict, List, Optional
 from uuid import UUID
-from datetime import datetime
+
 from models import Book, Genre
+
 
 class LibraryService:
     def __init__(self):
@@ -54,8 +56,8 @@ class LibraryService:
             return None
 
         existing = self._store[book_id]
-        update_data = book_data.dict(exclude_unset=True)
-        updated_book = existing.copy(update=update_data)
+        update_data = book_data.model_dump(exclude_unset=True)
+        updated_book = existing.model_copy(update=update_data)
         self._store[book_id] = updated_book
         return updated_book
 
