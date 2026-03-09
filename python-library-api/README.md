@@ -19,6 +19,38 @@ This is a FastAPI-based RESTful API that replicates the LibraryService functiona
 - `PUT /api/v1/books/{id}` — Update an existing book
 - `DELETE /api/v1/books/{id}` — Delete a book
 
+## Running Tests
+
+The project includes comprehensive API tests using pytest.
+
+### Install test dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+### Start the server (in one terminal):
+```bash
+python main.py
+```
+
+### Run tests (in another terminal):
+```bash
+# Run all tests
+pytest
+
+# Run with verbose output
+pytest -v
+
+# Run specific test
+pytest test_api.py::test_list_books
+
+# Run tests with coverage
+pytest --cov=.
+
+# Generate HTML test report
+pytest --html=report.html
+```
+
 ## Running the Application
 
 1. Install dependencies:
